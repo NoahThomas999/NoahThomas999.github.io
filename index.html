@@ -1485,7 +1485,7 @@ footer span {
     <span class="footer-logo">NT</span>
     <span style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;">21 Ways to Die · Noah Thomas · 2026</span>
     <button onclick="showPage('home')" style="background:none;border:none;color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;">← Back to Work</button>
-  </div>
+  </div/>
 
 </div><!-- end page-p3 -->
 
@@ -1496,6 +1496,7 @@ function showPage(page) {
   var homeLinks = document.getElementById('nav-home-links');
   var p1Back = document.getElementById('nav-p1-back');
   var p2Back = document.getElementById('nav-p2-back');
+  var p3Back = document.getElementById('nav-p3-back');
   homeLinks.style.display = '';
   p1Back.classList.remove('visible');
   p2Back.classList.remove('visible');
@@ -1508,6 +1509,7 @@ function showPage(page) {
   window.scrollTo(0, 0);
   if (page === 'p1') { homeLinks.style.display='none'; p1Back.classList.add('visible'); }
   else if (page === 'p2') { homeLinks.style.display='none'; p2Back.classList.add('visible'); }
+  else if (page === 'p3') { homeLinks.style.display='none'; p3Back.classList.add('visible'); }
 }
 function scrollToSection(id) {
   setTimeout(function() {
